@@ -1,36 +1,133 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="site">
-      <div class="header">
-        <div class="title">Boris-Mihail Gazibarov</div>
-        <div class="subtitle">@3ento</div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="temp-borders.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+</head>
+
+<body>
+  <div class="cascadia-mono-site">
+    <div class="header">
+      <div class="title">Boris-Mihail Gazibarov</div>
+      <div class="subtitle">@3ento</div>
+    </div>
+
+    <div class="content">
+      <div class="buttons">
+        <button type="button" class="cta" id="about-btn" onclick="AboutBtn()">About Me</button>
+        <button type="button" class="cta" onclick="show()">Education</button>
+        <button type="button" class="cta">Skills</button>
+        <button type="button" class="cta">Projects</button>
       </div>
-
-      <div class="content" style="border: 4px solid green">
-        <div class="buttons" style="border: 4px solid red">
-          <button type="button" class="btn btn-secondary">About</button>
-          <button type="button" class="btn btn-secondary">Education</button>
-          <button type="button" class="btn btn-secondary">Skills</button>
-          <button type="button" class="btn btn-secondary">Projects</button>
+      <div class="cards">
+        <div class="-card" id="abt">
+          <p class="cascadia-mono-hi">Hi,</p>
+          <p>I'm a programmer. I took an interest to it at a young age mostly due to my curiosity towards the inner
+            workings of everything. Far from uncommon, it all started with games, and a voice in the back of my head
+            asking
+            <span class="quotes">"how was this done?", "why like that?", "I want to do it too"</span>. Now that's
+            evolved into a curiosity for everything technical. I believe in the inherent value of knowledge, there is no
+            such thing as
+            <span class="evil-quotes">"useless knowledge"</span>. So I strive to know, and I strive to express myself
+            through this fascinating medium that is programming.
+          <p>For a bit more <span class="quotes">"soft skills"</span> and less
+            <span class="evil-quotes">"flavour text"</span> information about myself, see <button class="btn btn-dark soft-skill-btn"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+              aria-controls="collapseExample">
+              here
+            </button>
+          </p>
+          </p>
         </div>
-        <div class="cards">
-          <div class="content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem minus delectus praesentium possimus illum ad ex deleniti quis nemo debitis dolorum sequi eligendi velit, incidunt architecto doloribus? Rem, hic?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem minus delectus praesentium possimus illum ad ex deleniti quis nemo debitis dolorum sequi eligendi velit, incidunt architecto doloribus? Rem, hic?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem minus delectus praesentium possimus illum ad ex deleniti quis nemo debitis dolorum sequi eligendi velit, incidunt architecto doloribus? Rem, hic?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem minus delectus praesentium possimus illum ad ex deleniti quis nemo debitis dolorum sequi eligendi velit, incidunt architecto doloribus? Rem, hic?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam exercitationem minus delectus praesentium possimus illum ad ex deleniti quis nemo debitis dolorum sequi eligendi velit, incidunt architecto doloribus? Rem, hic?
-
+        <div class="-card" id="educa" hidden>
+          <p>
+            Technical University of SofiaTechnical University of Sofia
+            2024 - 20282024 - 2028
+          </p>
+          <p>
+            Vocational High School of Telecommunications
+            High School Diploma, Computer Systems Networking and TelecommunicationsHigh School Diploma, Computer Systems
+            Networking and Telecommunications Sep 2019 - May 2024Sep 2019 - May 2024
+          </p>
+          <p>
+            Software University (SoftUni)
+            Python Web Dev, Computer SciencePython Web Dev, Computer Science Jun 2020 - May 2023Jun 2020 - May 2023
+          </p>
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body" id="card-body">
+          <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <h2>> Organisation</h2>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>I have this weird kink for organizing everything around me. It has to do with another "soft
+                    skill" you could call it of mine, that I like data and stats. You can see this demonstrated in
+                    project form here, my fascination with using my music library as efficently and possible, while
+                    analyzing it and keeping it tidy. An example from my high-school years is this little thing
+                    here.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2>> Leadership</h2>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Most of my education relied on projects, not few of which being group ones. I often found
+                    myself in the leading position, making decisions like how the task is split, scheduling
+                    neccessery meetings, providing supoprt. I always liked talking to like-minded competent people,
+                    bouncing ideas around and seeing how a project evolves from that.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h2>> Headstrong</h2>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>I hate leaving projects unfinished or in a state I'm unhappy with. This here is an example of
+                    this. Some weird circumstances later and I find myself very unhappy with my performace at a
+                    programming competition. And out of this frustration, this code was born. I was glued to my
+                    laptop the whole trip back, hours straight I couldn't let this task go.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

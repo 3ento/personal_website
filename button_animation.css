@@ -1,0 +1,8 @@
+.cta {
+    width: fit-content;
+    height: 3rem;
+    border-radius: 12px;
+    background-color: #343a40;
+    color: #fff;
+    transition: width 0.7s;
+}
