@@ -1,6 +1,7 @@
 :root {
     --bg-color: #212529;
     --secondary-color: #343a40;
+    --bs-nav-pills-link-active-bg: #343a40;
 }
 
 * {
@@ -16,6 +17,7 @@ html {
     box-sizing: border-box;
     background-color: #212529;
     color: #f8f9fa;
+    height: max-content;
 }
 
 button {
@@ -27,10 +29,8 @@ button {
 .cascadia-mono-site {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
+
+    padding: 7rem;
     justify-content: space-evenly;
 
     font-family: "Cascadia Mono", sans-serif;
@@ -41,6 +41,19 @@ button {
 }
 
 .header {
+  display: flex;
+  height: 24rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > img:nth-child(1) {
+  width: 25%;
+  height: 24rem;
+}
+
+
+.header-text {
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -50,7 +63,6 @@ button {
     font-weight: 400;
 }
 
-
 .title {
     width: fit-content;
     align-self: center;
@@ -58,6 +70,10 @@ button {
 
 .subtitle {
     align-self: end;
+}
+
+hr {
+    width: 100%;
 }
 
 .content {
@@ -91,14 +107,7 @@ button {
 }
 
 .card {
-    background: #343a40;
-    width: 90vw;
-    position: relative;
-    top: -0.5rem;
-    z-index: 1;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem 0;
   }
 
 .cascadia-mono-hi {
@@ -114,26 +123,8 @@ button {
     font-weight: 400;
 }
 
-.evil-quotes {
-    font-style: italic;
-    font-weight: 400;
-    color: #191d20;
-}
-
 .btn {
     font-size: 1.5rem;
-}
-
-.cta {
-    width: fit-content;
-    height: 3rem;
-    border-radius: 12px;
-    background-color: #343a40;
-    color: #fff;
-}
-
-.collapse {
-    padding-top: -200px;
 }
 
 .accordion {
@@ -148,9 +139,183 @@ button {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-#educa {
+.schools {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; 
+}
+
+.schools > div {
+  flex: 1;
+  min-width: 250px; 
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 20vw;      
+  height: 100px;     
+  object-fit: contain; 
+  display: block;
+  margin: 0 auto 1rem auto; 
+}
+
+.accordion-body {
+    text-align: start;
+    font-size: 1.3rem;
+}
+
+#accordions {
+    margin-top: 1rem;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  margin: 1rem;
+  z-index: 99;
+}
+
+.exp-images img {
+    max-width: 35%;
+    height: auto;
+    flex: 1 1 auto;
+    object-fit: unset;
+}
+
+.exp-images {
     display: flex;
-    justify-content: space-evenly;
-    width: 90vw;
-    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 5rem;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.title,
+.subtitle {
+  flex-grow: 3;
+}
+
+#github-link {
+    content: url(images/github-mark-white.png);
+    height: 25px;
+    width: auto;
+}
+
+#linkedin-link {
+    content: url(images/InBug-White.png);
+    height: 25px;
+    width: auto;
+}
+
+#email-link {
+    content: url(images/icons8-email-50.png);
+    height: 25px;
+    width: auto;
+}
+
+#phone-link {
+    content: url(images/icons8-phone-50.png);
+    height: 25px;
+    width: auto;
+}
+
+
+/* Element | http://127.0.0.1:5500/index.html */
+
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+/* bootstrap.min.css | https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css */
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: none;
+  }
+}
+
+.card-button {
+    background-color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    color: #f8f9fa;
+}
+.card-button:hover {
+    background-color:#3c4147;
+;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+
+
+.card-btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.card-btns > a:nth-child(1) {
+  width: 100%;
+}
+
+
+.card-btns > a:nth-child(3) {
+  width: 100%;
+}
+
+
+.vr {
+  width: 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: var(--secondary-color);
+}
+
+.nav-link {
+  color: white;
 }
