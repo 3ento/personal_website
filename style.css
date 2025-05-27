@@ -69,8 +69,11 @@ button {
 }
 
 .title, .subtitle {
-    width: fit-content;
-    align-self: center;
+  width: fit-content;
+}
+
+.title {
+  align-self: end;
 }
 
 .subtitle {
@@ -80,6 +83,11 @@ button {
 hr {
     width: 100%;
     color: var(--accent-color);
+}
+
+.header hr {
+  width: 90%;
+  align-self: flex-end;
 }
 
 #about {
@@ -169,7 +177,9 @@ hr {
     height: 100px;     
     object-fit: contain; 
     display: block;
-    margin: 0 auto 1rem auto; 
+    margin: 0 auto 1rem auto;
+    filter: drop-shadow(1px 5px 12px black);
+
 }
 
 .accordion-body {
