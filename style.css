@@ -244,8 +244,16 @@ a {
     content: url(images/github-mark-white.png);
 }
 
+#github-link:hover {
+    opacity: 0.5;
+}
+
 #linkedin-link {
     content: url(images/InBug-White.png);
+}
+
+#linkedin-link:hover {
+    opacity: 0.5;
 }
 
 #email-link {
@@ -410,6 +418,7 @@ body {
 }
 
 .email-container:hover {
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -444,6 +453,7 @@ body {
 
 .phone-container:hover {
     cursor: pointer;
+    opacity: 0.5;
 }
 
 #phone-link {
@@ -466,4 +476,19 @@ body {
   max-width: 300px;
   opacity: 1;
   padding-left: 12px;
+}
+
+.pgtk-title:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.tu-title:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.softuni-title:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }

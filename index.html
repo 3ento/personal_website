@@ -16,6 +16,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
     </script>
+
+    <script src="script.js"></script>
 </head>
 
 </head>
@@ -87,7 +89,7 @@
           <div class="logo">
             <img src="images/a3kjl0x4.png" alt="tu">
           </div>
-          <h3>Technical University <br>of Sofia</h3>
+          <h3 class="tu-title" onclick="goToTU()">Technical University <br>of Sofia</h3>
           <h4 class="accented-text text-shadow">2024 - Current</h4>
           </div>
           <div class="accordion accordion-flush" id="accordions">
@@ -131,7 +133,7 @@
           <div class="logo">
             <img src="images/hkflksdn.png" alt="pgtk">
           </div>
-          <h3>Professional School of Telecommunications</h3>
+          <h3 class="pgtk-title" onclick="goToPGTK()">Professional School of Telecommunications</h3>
           <h4 class="accented-text text-shadow">2019 - 2024</h4>
           </div>
 
@@ -207,7 +209,7 @@
             <div class="logo">
               <img src="images/Logo_Software_University_(SoftUni)_-_blue_png.png" alt="softuni">
             </div>
-            <h3>Software <br>University</h3>
+            <h3 class="softuni-title" onclick="goToSoftUni()">Software <br>University</h3>
             <h4 class="accented-text text-shadow">2020 - 2023</h4>
           </div>
           <div class="accordion accordion-flush" id="accordions">
@@ -555,24 +557,6 @@
 
     
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-    <script>
-      function revealEmail() {
-        const emailText = document.getElementById("email-text");
-        const container = document.querySelector(".email-container");
-
-        emailText.classList.toggle("revealed");
-        container.classList.toggle("revealed");
-        }
-
-      function revealPhone() {
-        const emailText = document.getElementById("phone-text");
-        const container = document.querySelector(".phone-container");
-
-        emailText.classList.toggle("revealed");
-        container.classList.toggle("revealed");
-        }
-
-    </script>
 </body>
 
 </html>
