@@ -2,6 +2,7 @@
     --bg-color: #212529;
     --secondary-color: #343a40;
     --bs-nav-pills-link-active-bg: #343a40;
+    --accent-color: #486581;
 }
 
 * {
@@ -48,14 +49,20 @@ button {
 
 .header {
   display: flex;
-  height: 24rem;
+  height: fit-content;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cascadia-mono-site > hr:nth-child(2) {
+  margin-top: 0;
 }
 
 .header > img:nth-child(1) {
+  filter: drop-shadow(4px 0px 1px black);
+  height: 100%;
   width: 25%;
-  height: 24rem;
 }
 
 
@@ -67,6 +74,7 @@ button {
     width: fit-content;
     font-size: 4rem;
     font-weight: 400;
+    filter: drop-shadow(4px 0px 1px black);
 }
 
 .title {
@@ -80,6 +88,12 @@ button {
 
 hr {
     width: 100%;
+    color: var(--accent-color);
+}
+
+#about {
+  text-align: justify;
+  font-size: 1.5rem;
 }
 
 .content {
@@ -121,7 +135,7 @@ hr {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 3rem;
+    /*font-size: 3rem;*/
 }
 
 .quotes {
@@ -149,7 +163,9 @@ hr {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  text-align: justify;
+   
 }
 
 .schools > div {
@@ -158,6 +174,7 @@ hr {
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
+  
 }
 
 .logo img {
@@ -182,6 +199,13 @@ hr {
   top: 0;
   margin: 1rem;
   z-index: 99;
+  background-color: #3d556ca5;
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.exp-text {
+  font-size: 1.5rem;
+  
 }
 
 .exp-images img {
@@ -208,6 +232,7 @@ a {
     display: flex;
     flex-grow: 1;
     gap: 1rem;
+    justify-content: flex-end;
 }
 
 .title,
@@ -319,9 +344,135 @@ a {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color);
+}
+
+#navbar {
+  color: #102a43;
 }
 
 .nav-link {
   color: white;
+}
+
+/* style.css | http://127.0.0.1:5500/style.css */
+
+.cascadia-mono-site {
+  /* padding: 7rem; */
+  padding: 6rem 18rem;
+}
+
+/* Element | http://127.0.0.1:5500/#about */
+
+#navbar {
+  width: 75%;
+  margin: auto;
+}
+
+/* Element | http://127.0.0.1:5500/#about */
+
+
+
+/* Element | http://127.0.0.1:5500/#about */
+
+body {
+  /* background: #212529; */
+  background: linear-gradient(rgb(33, 37, 41) 0%, rgb(52, 58, 64) 80%, rgb(33, 37, 41) 100%);
+}
+
+/* Element | http://127.0.0.1:5500/#about */
+
+.fenice > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  filter: drop-shadow(5px 5px 4px black);
+}
+
+/* Element | http://127.0.0.1:5500/#about */
+
+.m2net > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  filter: drop-shadow(5px 5px 4px black);
+}
+
+/* Element | http://127.0.0.1:5500/#about */
+
+.megahub > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+  filter: drop-shadow(5px 5px 4px black);
+}
+
+.card-text, .list-group-item {
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.list-group-item {
+  background-color: var(--bg-color);
+}
+
+.card-body, .card-header {
+  background-color: var(--secondary-color);
+}
+
+.card-button, .card-btns {
+  display: none;
+}
+
+.card, .display-1 {
+  filter: drop-shadow(1px 5px 12px black);
+}
+
+.accented-text {
+  color: var(--accent-color);
+}
+
+.text-shadow {
+  filter: drop-shadow(2px 0px 1px black);
+}
+
+.thumbnail-container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle-double {
+  border-radius: 0;
+}
+
+.thumbnail-container:hover .image {
+  opacity: 0.3;
+}
+
+.thumbnail-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 0.375rem;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.text:hover {
+  opacity: 1;
 }

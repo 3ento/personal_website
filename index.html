@@ -22,7 +22,7 @@
 
 <body>
 
-<nav id="navbar" class="navbar bg-body-tertiary px-3 mb-3">
+<nav id="navbar" class="navbar px-3 mb-3">
   <ul class="nav nav-pills">
     <li class="nav-item">
       <a class="nav-link" href="#about">About</a>
@@ -40,9 +40,9 @@
   <a class="navbar-brand" href="#">BMG `LOGO HERE`</a>
 </nav>
 
-  <div class="cascadia-mono-site" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%">
+  <div class="cascadia-mono-site" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" id="about">
     <div class="header">
-      <img src="images/placeholder_photo.png" alt="placeholder_photo">
+      <img src="images/az.png" alt="placeholder_photo">
       <div class="header-text">
         <div class="socials">
           <a href="https://github.com/3ento" target="_blank" id="github-link"></a>
@@ -50,15 +50,15 @@
           <a href="#" target="_blank" id="email-link"></a>
           <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!" target="_blank" id="phone-link" ></a>
         </div>
+        <hr>
         <div class="title">Boris-Mihail Gazibarov</div>
-        <div class="subtitle">@3ento</div>
+        <div class="subtitle accented-text">@3ento</div>
+        <hr>
       </div>
-
     </div>
-
-    <hr>
-    <div class="about" id="about">
-      <p class="display-1">Hi,</p>
+    
+    <div class="about" id="">
+      <p class="display-6">Hi,</p>
       <p>I'm a programmer. I took an interest to it at a young age mostly due to my curiosity towards the inner
         workings of everything. Far from uncommon, it all started with games, and a voice in the back of my head
         asking
@@ -81,7 +81,7 @@
             <img src="images/a3kjl0x4.png" alt="tu">
           </div>
           <h3>Technical University <br>of Sofia</h3>
-          <h4>2024 - Current</h4>
+          <h4 class="accented-text text-shadow">2024 - Current</h4>
           </div>
           <div class="accordion accordion-flush" id="accordions">
           <div class="accordion-item">
@@ -125,7 +125,7 @@
             <img src="images/hkflksdn.png" alt="pgtk">
           </div>
           <h3>Professional School of Telecomunications</h3>
-          <h4>2019 - 2024</h4>
+          <h4 class="accented-text text-shadow">2019 - 2024</h4>
           </div>
 
           <div class="accordion accordion-flush" id="accordions">
@@ -201,7 +201,7 @@
               <img src="images/Logo_Software_University_(SoftUni)_-_blue_png.png" alt="softuni">
             </div>
             <h3>Software <br>University</h3>
-            <h4>2020 - 2023</h4>
+            <h4 class="accented-text text-shadow">2020 - 2023</h4>
           </div>
           <div class="accordion accordion-flush" id="accordions">
             <div class="accordion-item">
@@ -283,7 +283,7 @@
     <hr>
     <div class="experience" id="Experience">
       <h1 class="display-1">Experience</h1>
-      <h1 class="display-5">•2023:</h1>
+      <h1 class="display-5 ">•2023:</h1>
       <div class="exp-images">
         <img src="images/fortes.png" alt="fortes" class="image-heading">
         <img src="images/erasmus.png" alt="erasmus" class="image-heading">
@@ -362,10 +362,18 @@
         <div class="row">
           <div class="col">
             <div class="card">
-              <img src="images/AMTIS.png" class="card-img-top" alt="Az moga tuk i sega">
+              <div class="thumbnail-container">
+              <img src="images/AMTIS.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/AMTIS_Math-Tricks_Console" target="_blank">
+                  <div class="text">GitHub Repo</div>
+                </a>
+                
+              </div>
+            </div>
               <div class="card-body">
                 <h5 class="card-title">Console grid game </h5>
-                <p class="card-text">Az Moga Tuk I Sega (translated "I can, right here, right now") game from competitive category "Programming". 2 or more players traverse a grid and score points. More details can be found on the GitHub repo.</p>
+                <p class="card-text">Programming contest. 2 or more players traverse a grid and score points. More details can be found on the GitHub repo.</p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">C#</li>
@@ -373,14 +381,20 @@
                 <li class="list-group-item">Console App</li>
                 <li class="list-group-item">Matricies</li>
               </ul>
-              <a href="https://github.com/3ento/AMTIS_Math-Tricks_Console" target="_blank">
-                <div class="card-body card-button">
-                  GitHub Repo
-                </div>
-              </a>
           </div>
           <div class="card">
-              <img src="images/tictactoe.png" class="card-img-top" alt="...">
+              <div class="thumbnail-container">
+              <img src="images/tictactoe.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/streamlit_tictactoe" target="_blank">
+                  <div class="text">GitHub Repo</div>
+                </a>
+                <br>
+                <a href="https://aitactoe.streamlit.app/" target="_blank">
+                  <div class="text">Live Demo</div>
+                </a>
+              </div>
+            </div>
               <div class="card-body">
                 <h5 class="card-title">Perfect Tic-Tac-Toe</h5>
                 <p class="card-text">A streamlit application for singleplayer tic-tac-toe against a bot, including 3 difficulty options - easy, medium and hard. Easy makes random moves, Medium has a built-in strategy and Hard uses a MiniMax algorith to always pick the best possible move.</p>
@@ -389,26 +403,18 @@
                 <li class="list-group-item">Python</li>
                 <li class="list-group-item">AI</li>
               </ul>
-              <div class="card-btns">
-
-                <a href="https://github.com/3ento/streamlit_tictactoe" target="_blank">
-                  <div class="card-body card-button">
-                    GitHub Repo
-                  </div>
-                </a>
-                <div class="vr"></div>
-                <a href="https://aitactoe.streamlit.app/">
-                  <div class="card-body card-button">
-                    Live Demo
-                  </div>
-                </a>
-
-              </div>
           </div>
         </div>
         <div class="col">
             <div class="card">
-        <img src="images/lua_game.png" class="card-img-top" alt="...">
+        <div class="thumbnail-container">
+              <img src="images/lua_game.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/spotipy-app-functions">
+                  <div class="text">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
         <div class="card-body">
           <h5 class="card-title">Lua/Love2D game</h5>
           <p class="card-text">A short top-down game written in the Lua framework Love2D.</p>
@@ -424,7 +430,18 @@
               </a>
           </div>
           <div class="card">
-              <img src="images/isaac.png" class="card-img-top" alt="...">
+              <div class="thumbnail-container">
+              <img src="images/isaac.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/spotipy-app-functions">
+                  <div class="text">GitHub Repo</div>
+                </a>
+                <br>
+                <a href="https://3ento.github.io/TheSlidingOfIsaac">
+                  <div class="text">Live Demo</div>
+                </a>
+              </div>
+            </div>
               <div class="card-body">
                 <h5 class="card-title">Front End carousel project</h5>
                 <p class="card-text">A carousel gallery of characters from the game The Binding of Isaac.</p>
@@ -433,26 +450,17 @@
                 <li class="list-group-item">HTML/CSS</li>
                 <li class="list-group-item">JavaScript</li>
               </ul>
-              <div class="card-btns">
-
-                <a href="https://github.com/3ento/TheSlidingOfIsaac" target="_blank">
-                  <div class="card-body card-button">
-                    GitHub Repo
-                  </div>
-                </a>
-                <div class="vr"></div>
-                <a href="https://3ento.github.io/TheSlidingOfIsaac">
-                  <div class="card-body card-button">
-                    Live Demo
-                  </div>
-                </a>
-
-              </div>
-              
               
           </div>
           <div class="card">
-              <img src="images/modern-front.png" class="card-img-top" alt="...">
+              <div class="thumbnail-container">
+              <img src="images/modern-front.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/spotipy-app-functions">
+                  <div class="text">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
               <div class="card-body">
                 <h5 class="card-title">Front-End pages</h5>
                 <p class="card-text">Two single page front end apps, responsive. One a responsive web-front, the other a modern front-end.</p>
@@ -482,7 +490,14 @@
         </div>
         <div class="col">
             <div class="card">
-        <img src="images/django.png" class="card-img-top" alt="...">
+        <div class="thumbnail-container">
+              <img src="images/django.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/spotipy-app-functions">
+                  <div class="text">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
         <div class="card-body">
           <h5 class="card-title">Django full-stack website</h5>
           <p class="card-text">Full-stack application for the final exam of the Python Web Dev paht in SoftUni. TuneAtheneum is a library for music and artists, complete with reviews, charts and more.</p>
@@ -501,7 +516,14 @@
               </a>
           </div>
           <div class="card">
-        <img src="images/vb1i1adu.png" class="card-img-top" alt="...">
+            <div class="thumbnail-container">
+              <img src="images/vb1i1adu.png" class="card-img-top image" alt="...">
+              <div class="middle">
+                <a href="https://github.com/3ento/spotipy-app-functions">
+                  <div class="text">GitHub Repo</div>
+                </a>
+              </div>
+            </div>
         <div class="card-body">
           <h5 class="card-title">Spotipy functions</h5>
           <p class="card-text">Python functions utilizing the Spotify API for various applications (Comparing 2 or more playlists - union, intersection, differences, Sort a playlist by the occurences of artists...)</p>
