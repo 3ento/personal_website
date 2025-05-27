@@ -45,10 +45,17 @@
       <img src="images/az.png" alt="placeholder_photo">
       <div class="header-text">
         <div class="socials">
+          
           <a href="https://github.com/3ento" target="_blank" id="github-link"></a>
           <a href="https://www.linkedin.com/in/boris-mihail-gazibarov-70b690363/" target="_blank" id="linkedin-link"></a>
-          <a href="#" target="_blank" id="email-link"></a>
-          <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!" target="_blank" id="phone-link" ></a>
+          <div class="email-container">
+            <span id="email-link" onclick="revealEmail()"></span>
+            <span class="email-text" id="email-text">bm.gazibarov@gmail.com</span>
+          </div>
+          <div class="phone-container">
+            <span id="phone-link" onclick="revealPhone()"></span>
+            <span class="phone-text" id="phone-text">+359 88 487 3090</span>
+          </div>
         </div>
         <hr>
         <div class="title">Boris-Mihail Gazibarov</div>
@@ -548,6 +555,24 @@
 
     
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script>
+      function revealEmail() {
+        const emailText = document.getElementById("email-text");
+        const container = document.querySelector(".email-container");
+
+        emailText.classList.toggle("revealed");
+        container.classList.toggle("revealed");
+        }
+
+      function revealPhone() {
+        const emailText = document.getElementById("phone-text");
+        const container = document.querySelector(".phone-container");
+
+        emailText.classList.toggle("revealed");
+        container.classList.toggle("revealed");
+        }
+
+    </script>
 </body>
 
 </html>

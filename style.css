@@ -400,3 +400,70 @@ body {
 .card {
     --bs-card-border-width: none;
 }
+
+
+.email-container {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.email-container:hover {
+    cursor: pointer;
+}
+
+#email-link {
+  transition: margin-left 0.5s ease;
+  white-space: nowrap;
+}
+
+.email-text {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 1s ease, opacity 1s ease;
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.email-text.revealed {
+  max-width: 300px; 
+  opacity: 1;
+  padding-left: 12px;
+}
+
+
+.phone-container {
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+
+.phone-container:hover {
+    cursor: pointer;
+}
+
+#phone-link {
+  transition: margin-left 0.5s ease;
+  white-space: nowrap;
+}
+
+.phone-text {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 1s ease, opacity 1s ease;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding: 0;
+}
+
+.phone-text.revealed {
+  max-width: 300px;
+  opacity: 1;
+  padding-left: 12px;
+}
