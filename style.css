@@ -270,32 +270,12 @@ a {
     margin: auto;
 }
 
-.card-button {
-    background-color: var(--secondary-color);
-    text-align: center;
-    text-decoration: none;
-    color: #f8f9fa;
-}
 
 .card-img-top {
     height: 100%;
     width: 95%;
     margin: auto;
     margin-top: 2.5%;
-}
-
-.card-button:hover {
-    background-color: #3c4147;
-}
-
-.card-btns {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card-btns > a:nth-child(1), 
-.card-btns > a:nth-child(3) {
-    width: 100%;
 }
 
 .vr {
@@ -327,10 +307,6 @@ body {
 .card-body, .card-header {
     background-color: var(--secondary-color);
     border-radius: 0 0 0.375rem 0.375rem;
-}
-
-.card-button, .card-btns {
-    display: none;
 }
 
 .card, .display-1 {
@@ -454,6 +430,15 @@ body {
     margin: auto;
 }
 
+.here-links {
+    text-decoration: underline;
+}
+
+.PERSONAL-LOGO {
+    filter: drop-shadow(4px 0px 1px black);
+    margin: auto;
+}
+
 @media screen and (min-width: 768px) {
     .cascadia-mono-site {
         padding: 4rem 8rem;
@@ -527,5 +512,9 @@ body {
 
     .header hr {
         width: 90%;
+    }
+
+    .PERSONAL-LOGO {
+        margin: 0;
     }
 }
